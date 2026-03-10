@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "website": "https://github.com/dani-garcia/vaultwarden",
   "source": "https://github.com/dani-garcia/vaultwarden",
-  "readme_url": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/README.md",
+  "icon": "https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/resources/vaultwarden-icon.svg",
   "ports": [8080],
   "features": [
     {
