@@ -24,3 +24,5 @@ A high-performance, self-hosted photo and video management solution that serves 
 ## Screenshots
 
 > Screenshots coming soon
+> <img width="1467" height="545" alt="image" src="https://github.com/user-attachments/assets/4e361d78-46ca-4bb5-865c-38edc46c589f" />
+
