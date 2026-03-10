@@ -1,0 +1,7 @@
+[
+  { "id": "media", "name": { "ko": "미디어", "en": "Media" }, "icon": "Film" },
+  { "id": "cloud", "name": { "ko": "클라우드", "en": "Cloud" }, "icon": "Cloud" },
+  { "id": "security", "name": { "ko": "보안", "en": "Security" }, "icon": "Shield" },
+  { "id": "monitoring", "name": { "ko": "모니터링", "en": "Monitoring" }, "icon": "Activity" },
+  { "id": "dev", "name": { "ko": "개발", "en": "Development" }, "icon": "Code" }
+]

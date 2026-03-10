@@ -1,0 +1,21 @@
+{
+  "id": "uptime-kuma",
+  "name": "Uptime Kuma",
+  "description": {
+    "ko": "서비스 모니터링 및 알림 도구",
+    "en": "Service monitoring and alerting tool"
+  },
+  "category": "monitoring",
+  "version": "1.0.0",
+  "website": "https://uptime.kuma.pet",
+  "source": "https://github.com/louislam/uptime-kuma",
+  "ports": [3001],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "3001"
+    }
+  ]
+}

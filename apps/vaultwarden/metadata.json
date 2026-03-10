@@ -1,0 +1,28 @@
+{
+  "id": "vaultwarden",
+  "name": "Vaultwarden",
+  "description": {
+    "ko": "셀프 호스팅 비밀번호 관리자 (Bitwarden 호환)",
+    "en": "Self-hosted password manager (Bitwarden compatible)"
+  },
+  "category": "security",
+  "version": "1.0.0",
+  "website": "https://github.com/dani-garcia/vaultwarden",
+  "source": "https://github.com/dani-garcia/vaultwarden",
+  "ports": [8080],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "8080"
+    },
+    {
+      "key": "ADMIN_TOKEN",
+      "label": { "ko": "관리자 토큰", "en": "Admin Token" },
+      "type": "password",
+      "required": true,
+      "generate": true
+    }
+  ]
+}
