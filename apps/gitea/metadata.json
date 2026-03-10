@@ -10,6 +10,28 @@
   "website": "https://gitea.com",
   "source": "https://github.com/go-gitea/gitea",
   "ports": [3000],
+  "features": [
+    {
+      "title": { "ko": "Git 호스팅", "en": "Git hosting" },
+      "description": { "ko": "웹 UI를 갖춘 완전한 Git 저장소 호스팅", "en": "Full Git repository hosting with web UI" },
+      "icon": "📦"
+    },
+    {
+      "title": { "ko": "CI/CD", "en": "CI/CD" },
+      "description": { "ko": "내장 Gitea Actions, GitHub Actions 호환", "en": "Built-in Gitea Actions, GitHub Actions compatible" },
+      "icon": "🔄"
+    },
+    {
+      "title": { "ko": "이슈 트래킹", "en": "Issue tracking" },
+      "description": { "ko": "이슈, 풀 리퀘스트, 프로젝트 보드", "en": "Issues, pull requests, project boards" },
+      "icon": "📋"
+    },
+    {
+      "title": { "ko": "경량화", "en": "Lightweight" },
+      "description": { "ko": "최소한의 리소스 사용, Go로 작성", "en": "Minimal resource usage, written in Go" },
+      "icon": "💨"
+    }
+  ],
   "env": [
     {
       "key": "PORT",

@@ -10,6 +10,28 @@
   "website": "https://immich.app",
   "source": "https://github.com/immich-app/immich",
   "ports": [2283],
+  "features": [
+    {
+      "title": { "ko": "자동 백업", "en": "Auto backup" },
+      "description": { "ko": "모바일 기기에서 사진/동영상 자동 백업", "en": "Automatic photo/video backup from mobile devices" },
+      "icon": "📸"
+    },
+    {
+      "title": { "ko": "AI 기능", "en": "AI features" },
+      "description": { "ko": "얼굴 인식, 객체 감지, 스마트 검색", "en": "Face recognition, object detection, smart search" },
+      "icon": "🤖"
+    },
+    {
+      "title": { "ko": "지도 보기", "en": "Map view" },
+      "description": { "ko": "인터랙티브 지도에서 사진 탐색", "en": "Browse photos on an interactive map" },
+      "icon": "🗺️"
+    },
+    {
+      "title": { "ko": "공유", "en": "Sharing" },
+      "description": { "ko": "가족/친구와 앨범 및 사진 공유", "en": "Share albums and photos with family/friends" },
+      "icon": "👥"
+    }
+  ],
   "env": [
     {
       "key": "PORT",

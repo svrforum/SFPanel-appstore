@@ -10,6 +10,28 @@
   "website": "https://nextcloud.com",
   "source": "https://github.com/nextcloud/server",
   "ports": [8080],
+  "features": [
+    {
+      "title": { "ko": "파일 동기화", "en": "File sync" },
+      "description": { "ko": "모든 기기에서 파일 동기화", "en": "Sync files across all your devices" },
+      "icon": "☁️"
+    },
+    {
+      "title": { "ko": "오피스 스위트", "en": "Office suite" },
+      "description": { "ko": "Collabora/OnlyOffice를 통한 내장 문서 편집", "en": "Built-in document editing with Collabora/OnlyOffice" },
+      "icon": "📝"
+    },
+    {
+      "title": { "ko": "캘린더/연락처", "en": "Calendar/Contacts" },
+      "description": { "ko": "CalDAV/CardDAV 동기화", "en": "CalDAV/CardDAV sync" },
+      "icon": "📅"
+    },
+    {
+      "title": { "ko": "앱 생태계", "en": "App ecosystem" },
+      "description": { "ko": "수백 개의 커뮤니티 앱과 통합 기능", "en": "Hundreds of community apps and integrations" },
+      "icon": "🔌"
+    }
+  ],
   "env": [
     {
       "key": "PORT",
