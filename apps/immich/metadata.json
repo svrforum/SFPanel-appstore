@@ -1,0 +1,34 @@
+{
+  "id": "immich",
+  "name": "Immich",
+  "description": {
+    "ko": "셀프 호스팅 사진/동영상 백업 솔루션 (Google Photos 대안)",
+    "en": "Self-hosted photo and video backup solution (Google Photos alternative)"
+  },
+  "category": "media",
+  "version": "1.0.0",
+  "website": "https://immich.app",
+  "source": "https://github.com/immich-app/immich",
+  "ports": [2283],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "2283"
+    },
+    {
+      "key": "DB_PASSWORD",
+      "label": { "ko": "DB 비밀번호", "en": "DB Password" },
+      "type": "password",
+      "required": true,
+      "generate": true
+    },
+    {
+      "key": "UPLOAD_LOCATION",
+      "label": { "ko": "업로드 경로", "en": "Upload Location" },
+      "type": "path",
+      "default": "./upload"
+    }
+  ]
+}

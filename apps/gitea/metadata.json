@@ -1,0 +1,28 @@
+{
+  "id": "gitea",
+  "name": "Gitea",
+  "description": {
+    "ko": "경량 셀프 호스팅 Git 서비스",
+    "en": "Lightweight self-hosted Git service"
+  },
+  "category": "dev",
+  "version": "1.0.0",
+  "website": "https://gitea.com",
+  "source": "https://github.com/go-gitea/gitea",
+  "ports": [3000],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "3000"
+    },
+    {
+      "key": "DB_PASSWORD",
+      "label": { "ko": "DB 비밀번호", "en": "DB Password" },
+      "type": "password",
+      "required": true,
+      "generate": true
+    }
+  ]
+}

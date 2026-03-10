@@ -1,0 +1,21 @@
+{
+  "id": "jellyfin",
+  "name": "Jellyfin",
+  "description": {
+    "ko": "오픈소스 미디어 스트리밍 서버",
+    "en": "Open source media streaming server"
+  },
+  "category": "media",
+  "version": "1.0.0",
+  "website": "https://jellyfin.org",
+  "source": "https://github.com/jellyfin/jellyfin",
+  "ports": [8096],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "8096"
+    }
+  ]
+}

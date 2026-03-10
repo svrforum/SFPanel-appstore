@@ -1,0 +1,21 @@
+{
+  "id": "portainer",
+  "name": "Portainer",
+  "description": {
+    "ko": "Docker 관리 웹 UI",
+    "en": "Docker management UI"
+  },
+  "category": "dev",
+  "version": "1.0.0",
+  "website": "https://www.portainer.io",
+  "source": "https://github.com/portainer/portainer",
+  "ports": [9000],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "9000"
+    }
+  ]
+}

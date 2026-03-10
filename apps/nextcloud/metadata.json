@@ -1,0 +1,35 @@
+{
+  "id": "nextcloud",
+  "name": "Nextcloud",
+  "description": {
+    "ko": "셀프 호스팅 클라우드 스토리지",
+    "en": "Self-hosted cloud storage"
+  },
+  "category": "cloud",
+  "version": "1.0.0",
+  "website": "https://nextcloud.com",
+  "source": "https://github.com/nextcloud/server",
+  "ports": [8080],
+  "env": [
+    {
+      "key": "PORT",
+      "label": { "ko": "외부 포트", "en": "External Port" },
+      "type": "port",
+      "default": "8080"
+    },
+    {
+      "key": "MYSQL_ROOT_PASSWORD",
+      "label": { "ko": "MySQL Root 비밀번호", "en": "MySQL Root Password" },
+      "type": "password",
+      "required": true,
+      "generate": true
+    },
+    {
+      "key": "MYSQL_PASSWORD",
+      "label": { "ko": "MySQL 비밀번호", "en": "MySQL Password" },
+      "type": "password",
+      "required": true,
+      "generate": true
+    }
+  ]
+}
