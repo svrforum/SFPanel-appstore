@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "website": "https://www.portainer.io",
   "source": "https://github.com/portainer/portainer",
+  "readme_url": "https://raw.githubusercontent.com/portainer/portainer/develop/README.md",
   "ports": [9000],
   "features": [
     {

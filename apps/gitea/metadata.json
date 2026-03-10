@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "website": "https://gitea.com",
   "source": "https://github.com/go-gitea/gitea",
+  "readme_url": "https://raw.githubusercontent.com/go-gitea/gitea/main/README.md",
   "ports": [3000],
   "features": [
     {

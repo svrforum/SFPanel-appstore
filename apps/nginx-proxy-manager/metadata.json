@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "website": "https://nginxproxymanager.com",
   "source": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+  "readme_url": "https://raw.githubusercontent.com/NginxProxyManager/nginx-proxy-manager/develop/README.md",
   "ports": [80, 81, 443],
   "features": [
     {

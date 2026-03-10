@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "website": "https://nextcloud.com",
   "source": "https://github.com/nextcloud/server",
+  "readme_url": "https://raw.githubusercontent.com/nextcloud/server/master/README.md",
   "ports": [8080],
   "features": [
     {

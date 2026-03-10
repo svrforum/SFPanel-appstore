@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "website": "https://jellyfin.org",
   "source": "https://github.com/jellyfin/jellyfin",
+  "readme_url": "https://raw.githubusercontent.com/jellyfin/jellyfin/master/README.md",
   "ports": [8096],
   "features": [
     {

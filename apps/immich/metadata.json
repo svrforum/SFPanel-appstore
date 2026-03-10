@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "website": "https://immich.app",
   "source": "https://github.com/immich-app/immich",
+  "readme_url": "https://raw.githubusercontent.com/immich-app/immich/main/README.md",
   "ports": [2283],
   "features": [
     {
