@@ -75,7 +75,23 @@ mkdir apps/my-app
 
 ### 3. docker-compose.yml 작성
 
-환경변수는 `${VAR_NAME:-default}` 형태로 참조합니다. 설치 시 metadata.json의 `env` 정의에 따라 `.env` 파일이 자동 생성됩니다.
+**반드시 공식 GitHub 저장소의 `docker-compose.yml`을 기반으로 작성하세요.** 임의로 새로 작성하면 healthcheck 누락, 의존성 순서 오류 등으로 설치가 실패할 수 있습니다.
+
+#### 작성 절차
+
+1. 공식 저장소의 `docker-compose.yml` (또는 `docker-compose.prod.yml`) 원본을 가져옵니다
+2. SFPanel 앱스토어에 맞게 **최소한의 수정만** 적용합니다:
+   - 사용자가 변경할 포트를 `${PORT:-기본값}` 형태로 환경변수화
+   - `generate: true`로 자동 생성할 비밀번호를 `${DB_PASSWORD}` 등으로 환경변수화
+   - optional 서비스 (OnlyOffice, SSO 등 profile 기반 서비스)는 제거하여 간소화
+   - 호스트 바인드 마운트(`./data:/data`)는 named volume으로 변경
+3. **절대 변경하지 말 것:**
+   - `healthcheck` 설정 — 원본 그대로 유지 (누락 시 `depends_on: condition: service_healthy` 실패)
+   - `depends_on` 의존성 구조 — 원본의 순서와 조건을 그대로 유지
+   - `environment` 기본값 — 앱이 필요로 하는 환경변수를 임의로 제거하지 않음
+   - `command` 설정 — 원본에 있는 커스텀 명령은 그대로 유지
+
+#### 예시
 
 ```yaml
 services:
@@ -89,13 +105,20 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
     volumes:
       - my-app-data:/data
+    healthcheck:                    # 공식 compose에서 그대로 복사!
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   my-app-data:
 ```
 
 **규칙:**
-- `container_name`은 앱 ID와 동일하게 설정
+- **공식 docker-compose.yml 기반 필수** — 직접 작성 금지
+- `healthcheck`는 원본에서 반드시 복사 — 누락 시 의존 서비스 시작 실패
+- `container_name`은 앱별 고유 접두사 사용 (예: `fh-api`, `npg-db`)
 - 볼륨은 named volume 사용 (호스트 바인드 마운트 지양)
 - `restart: unless-stopped` 권장
 - 포트는 `${PORT:-기본값}:컨테이너포트` 형태로 사용자가 변경 가능하게
