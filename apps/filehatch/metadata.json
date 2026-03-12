@@ -125,6 +125,5 @@
       "type": "text",
       "default": "Asia/Seoul"
     }
-  ],
-  "icon": "https://raw.githubusercontent.com/svrforum/FileHatch/main/File_Hatch_Logo.png"
+  ]
 }

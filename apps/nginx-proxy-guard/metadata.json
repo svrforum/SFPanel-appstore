@@ -117,6 +117,5 @@
       "type": "text",
       "default": "Asia/Seoul"
     }
-  ],
-  "icon": "https://raw.githubusercontent.com/svrforum/NginxProxyGuard/main/ui/public/shield.svg"
+  ]
 }

@@ -9,7 +9,6 @@
   "version": "1.0.0",
   "website": "https://nginxproxymanager.com",
   "source": "https://github.com/NginxProxyManager/nginx-proxy-manager",
-  "icon": "https://raw.githubusercontent.com/NginxProxyManager/nginx-proxy-manager/develop/frontend/public/images/logo-no-text.svg",
   "ports": [
     80,
     81,
