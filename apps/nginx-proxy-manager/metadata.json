@@ -5,7 +5,7 @@
     "ko": "SSL 관리 기능이 포함된 리버스 프록시",
     "en": "Reverse proxy with SSL management"
   },
-  "category": "dev",
+  "category": "security",
   "version": "1.0.0",
   "website": "https://nginxproxymanager.com",
   "source": "https://github.com/NginxProxyManager/nginx-proxy-manager",
