@@ -11,10 +11,12 @@
   "source": "https://github.com/postgres/postgres",
   "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/postgres.svg",
   "ports": [5432],
-  "features": {
-    "ko": ["ACID 트랜잭션", "JSON/JSONB 지원", "전문 검색", "확장 시스템 (PostGIS 등)"],
-    "en": ["ACID transactions", "JSON/JSONB support", "Full-text search", "Extension system (PostGIS, etc.)"]
-  },
+  "features": [
+    { "title": { "ko": "ACID 트랜잭션", "en": "ACID Transactions" }, "description": { "ko": "완전한 ACID 호환 트랜잭션 지원", "en": "Full ACID compliant transaction support" }, "icon": "🔒" },
+    { "title": { "ko": "JSON 지원", "en": "JSON Support" }, "description": { "ko": "JSON/JSONB 네이티브 데이터 타입", "en": "Native JSON/JSONB data types" }, "icon": "📋" },
+    { "title": { "ko": "전문 검색", "en": "Full-Text Search" }, "description": { "ko": "내장 전문 검색 엔진", "en": "Built-in full-text search engine" }, "icon": "🔍" },
+    { "title": { "ko": "확장 시스템", "en": "Extensions" }, "description": { "ko": "PostGIS 등 다양한 확장 지원", "en": "Support PostGIS and many extensions" }, "icon": "🧩" }
+  ],
   "env": [
     { "key": "POSTGRES_USER", "description": { "ko": "관리자 사용자명", "en": "Admin username" }, "default": "postgres", "required": true },
     { "key": "POSTGRES_PASSWORD", "description": { "ko": "관리자 비밀번호", "en": "Admin password" }, "default": "changeme", "required": true },
