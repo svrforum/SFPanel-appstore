@@ -1,0 +1,22 @@
+{
+  "id": "mongodb",
+  "name": "MongoDB",
+  "description": {
+    "ko": "유연한 스키마의 NoSQL 문서 데이터베이스. JSON 형태의 문서를 저장하고 쿼리합니다.",
+    "en": "Flexible schema NoSQL document database. Store and query JSON-like documents."
+  },
+  "category": "database",
+  "version": "7",
+  "website": "https://www.mongodb.com",
+  "source": "https://github.com/mongodb/mongo",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/mongodb.svg",
+  "ports": [27017],
+  "features": {
+    "ko": ["문서 지향 스토리지", "유연한 스키마", "집계 파이프라인", "인덱싱 및 샤딩"],
+    "en": ["Document-oriented storage", "Flexible schema", "Aggregation pipeline", "Indexing and sharding"]
+  },
+  "env": [
+    { "key": "MONGO_INITDB_ROOT_USERNAME", "description": { "ko": "관리자 사용자명", "en": "Admin username" }, "default": "admin", "required": true },
+    { "key": "MONGO_INITDB_ROOT_PASSWORD", "description": { "ko": "관리자 비밀번호", "en": "Admin password" }, "default": "changeme", "required": true }
+  ]
+}

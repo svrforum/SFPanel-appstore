@@ -1,0 +1,21 @@
+{
+  "id": "redis",
+  "name": "Redis",
+  "description": {
+    "ko": "초고속 인메모리 데이터 스토어. 캐싱, 세션 관리, 메시지 브로커로 널리 사용됩니다.",
+    "en": "Ultra-fast in-memory data store. Widely used for caching, session management, and message brokering."
+  },
+  "category": "database",
+  "version": "7",
+  "website": "https://redis.io",
+  "source": "https://github.com/redis/redis",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/redis.svg",
+  "ports": [6379],
+  "features": {
+    "ko": ["인메모리 키-값 스토어", "퍼시스턴스 (RDB/AOF)", "Pub/Sub 메시징", "Lua 스크립팅"],
+    "en": ["In-memory key-value store", "Persistence (RDB/AOF)", "Pub/Sub messaging", "Lua scripting"]
+  },
+  "env": [
+    { "key": "REDIS_PASSWORD", "description": { "ko": "Redis 비밀번호", "en": "Redis password" }, "default": "changeme", "required": true }
+  ]
+}

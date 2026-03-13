@@ -1,0 +1,24 @@
+{
+  "id": "mariadb",
+  "name": "MariaDB",
+  "description": {
+    "ko": "MySQL 호환 오픈소스 관계형 데이터베이스. 높은 성능과 안정성을 제공합니다.",
+    "en": "MySQL-compatible open source relational database. Offers high performance and reliability."
+  },
+  "category": "database",
+  "version": "11",
+  "website": "https://mariadb.org",
+  "source": "https://github.com/MariaDB/server",
+  "icon": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/mariadb.svg",
+  "ports": [3306],
+  "features": {
+    "ko": ["MySQL 완전 호환", "Galera 클러스터링", "컬럼스토어 엔진", "동적 컬럼"],
+    "en": ["Full MySQL compatibility", "Galera clustering", "Columnstore engine", "Dynamic columns"]
+  },
+  "env": [
+    { "key": "MARIADB_ROOT_PASSWORD", "description": { "ko": "루트 비밀번호", "en": "Root password" }, "default": "changeme", "required": true },
+    { "key": "MARIADB_DATABASE", "description": { "ko": "기본 데이터베이스명", "en": "Default database name" }, "default": "mydb", "required": false },
+    { "key": "MARIADB_USER", "description": { "ko": "사용자명", "en": "Username" }, "default": "user", "required": false },
+    { "key": "MARIADB_PASSWORD", "description": { "ko": "사용자 비밀번호", "en": "User password" }, "default": "changeme", "required": false }
+  ]
+}
